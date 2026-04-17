@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuesta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Encuesta rápida</h2>
+
+  <form id="surveyForm">
+
+    <label>¿Trabajas?</label>
+    <select id="trabaja" required>
+      <option value="">Selecciona</option>
+      <option value="si">Sí</option>
+      <option value="no">No</option>
+    </select>
+
+    <div id="salarioContainer" class="hidden">
+      <label>¿Cuál es tu salario?</label>
+      <input type="number" id="salario">
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <p id="mensaje"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
